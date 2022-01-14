@@ -24,7 +24,7 @@ namespace MethodOverloadingExercise
 
         static string Add(int a, int b, bool c)
         {
-            return c ? $"{a + b} dollars" : "1 dollar";
+            return c ? (a + b != 1) ? $"{a + b} dollars" : "1 dollar" : (a+b).ToString();
         }
     }
 }
